@@ -1,0 +1,63 @@
+<html>
+<!--
+==========================
+Endroid Weather Widget
+==========================
+
+Wynd.
+-->
+<head>
+<style>
+#info{
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+body{
+	background-color:transparent;
+}
+</style>
+<script type="text/javascript">
+window.onload = onLoad;
+var db;
+
+function onLoad() {
+    db = openDatabase("endroid", "1.0", "Endroid", 65536);
+    db.transaction(function (c) {
+	c.executeSql("CREATE TABLE IF NOT EXISTS zips (zip TEXT);", [], function (a, b) {}, function (a, b) {})
+    });
+    getFromDB();
+}
+function setZip() {
+    var a = prompt("Enter your zip code or Weather.com code");
+    if (a != null && a != "") {
+	localStorage.setItem("zip", a);
+	addToDB(a);
+    }
+}
+function addToDB(d) {
+    db.transaction(function (c) {
+	c.executeSql("Drop TABLE zips", [], function (a, b) {}, function (a, b) {})
+    });
+    db.transaction(function (c) {
+	c.executeSql("CREATE TABLE zips(zip TEXT)", [], function (a, b) {}, function (a, b) {})
+    });
+    db.transaction(function (c) {
+	c.executeSql("INSERT INTO zips (zip) VALUES (?);", [d], function (a, b) {}, function (a, b) {})
+    })
+}
+function getFromDB() {
+    db.transaction(function (d) {
+	d.executeSql('SELECT * FROM zips', [], function (a, b) {
+	    for (var i = 0; i < b.rows.length; i++) {
+		var c = b.rows.item(i);
+		localStorage.setItem("zip", c.zip)
+	    }
+	}, function (a, b) {})
+    })
+}
+</script>
+<body>
+<div id="info" onClick="setZip()"><img src="info.png" /></div>
+</body>
+</html>

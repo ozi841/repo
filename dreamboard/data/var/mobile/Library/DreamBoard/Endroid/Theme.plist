@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MainView</key>
+	<array>
+		<dict>
+			<!--@start selection-->
+			<key>Frame</key><string>0,480,320,200</string>
+			<key>id</key><string>selection</string>
+			<key>ViewType</key><string>View</string>
+			<key>Subviews</key>
+			<array>
+				<dict>
+					<key>Frame</key><string>0,0,320,200</string>
+					<key>Image</key>
+					<string>$ROOT/Images/Selection.png</string>
+					<key>ViewType</key><string>ImageView</string>
+				</dict>
+			</array>
+			<!--@end selection-->
+		</dict>
+		<dict>
+			<!--@start dock-->
+			<key>Frame</key><string>0,415,320,65</string>
+			<key>Subviews</key>
+			<array>
+				<dict>
+					<key>Frame</key><string>135,15,50,5</string>
+					<key>Image</key>
+					<string>$ROOT/Images/PageIndicator.png</string>
+					<key>ViewType</key><string>ImageView</string>
+					<key>id</key><string>pageindi</string>
+				</dict>
+				<dict>
+					<key>Actions</key>
+					<array><string>launch com.wynd.dreamboard</string></array>
+					<key>Frame</key><string>84,26,150,38</string>
+					<key>Image</key>
+					<string>$ROOT/Images/DreamBoard.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key><array>
+						<string>get.vars.grid = 0 ? vars.grid = 1 : vars.grid = 0</string>
+						<string>function update</string></array>
+					<key>Frame</key><string>6,30,73,36</string>
+					<key>Image</key>
+					<string>$ROOT/Images/Apps.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key><array>
+						<string>get.vars.settings = 0 ? vars.settings = 1 : vars.settings = 0</string>
+						<string>function update</string></array>
+					<key>Frame</key><string>238,30,73,36</string>
+					<key>Image</key>
+					<string>$ROOT/Images/Widgets.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Frame</key><string>0,0,320,65</string>
+					<key>Image</key>
+					<string>$ROOT/Images/Dock.png</string>
+					<key>ViewType</key><string>ImageView</string>
+				</dict>
+			</array>
+			<key>ViewType</key><string>View</string>
+			<key>id</key><string>dock</string>
+			<!--@end dock-->
+		</dict>
+		<dict>
+			<!--@start settings-->
+			<key>Frame</key><string>0,480,320,480</string>
+			<key>UserInteraction</key><true/>
+			<key>ViewType</key><string>View</string>
+			<key>id</key><string>settings</string>
+			<key>Subviews</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>vars.selection-web = 1</string>
+						<string>vars.settings = 0</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>0,266,320,70</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>vars.selection-wall = 1</string>
+						<string>vars.settings = 0</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>0,200,320,70</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>get.vars.editing = 0 ? vars.editing = 1 : vars.editing = 0</string>
+						<string>get.vars.settings = 0 ? vars.settings = 1 : vars.settings = 0</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>0,130,320,70</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>get.vars.law = 0 ? vars.law = 1 : vars.law = 0</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>0,70,320,70</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Frame</key><string>270,155,30,30</string>
+					<key>UserInteraction</key><false/>
+					<key>ViewType</key><string>ImageView</string>
+					<key>id</key><string>box2</string>
+				</dict>
+				<dict>
+					<key>Frame</key><string>270,88,30,30</string>
+					<key>UserInteraction</key><false/>
+					<key>ViewType</key><string>ImageView</string>
+					<key>id</key><string>box1</string>
+				</dict>
+				<dict>
+					<key>Frame</key><string>0,0,320,480</string>
+					<key>Image</key>
+					<string>$ROOT/Images/Settings.png</string>
+					<key>UserInteraction</key><false/>
+					<key>ViewType</key><string>ImageView</string>
+				</dict>
+			</array>
+			<!--@end settings-->
+		</dict>
+		<dict>
+			<!--@start grid-->
+			<key>Frame</key><string>0,480,320,480</string>
+			<key>UserInteraction</key><true/>
+			<key>ViewType</key><string>View</string>
+			<key>id</key><string>grid</string>
+			<key>Subviews</key>
+			<array>
+				<dict>
+					<key>Frame</key><string>0,70,320,370</string>
+					<key>Image</key>
+					<string>$ROOT/Images/GridOverlay.png</string>
+					<key>UserInteraction</key><false/>
+					<key>ViewType</key><string>ImageView</string>
+				</dict>
+				<dict>
+					<key>Actions</key><array>
+						<string>get.vars.grid = 0 ? vars.grid = 1 : vars.grid = 0</string>
+						<string>function update</string></array>
+					<key>AllApps</key><true/>
+					<key>ClipToBounds</key><true/>
+					<key>Cols</key><integer>4</integer>
+					<key>Frame</key><string>10,70,310,370</string>
+					<key>GapX</key><integer>77</integer>
+					<key>GapY</key><integer>85</integer>
+					<key>IconHeight</key><integer>85</integer>
+					<key>IconWidth</key><integer>65</integer>
+					<key>PageHeight</key><integer>340</integer>
+					<key>Rows</key><integer>4</integer>
+					<key>ViewType</key><string>AppGrid</string>
+					<key>id</key><string>realgrid</string>
+				</dict>
+				<dict>
+					<key>Frame</key><string>0,20,320,460</string>
+					<key>Image</key>
+					<string>$ROOT/Images/AppGrid.png</string>
+					<key>UserInteraction</key><false/>
+					<key>ViewType</key><string>ImageView</string>
+				</dict>
+			</array>
+			<!--@end grid-->
+		</dict>
+
+		<dict>
+			<!--@start MainScrollView -->
+			<key>Actions</key>
+			<array><string>function ScrollViewDidScroll</string></array>
+			<key>ContentHeight</key><integer>480</integer>
+			<key>ContentOffsetX</key><integer>320</integer>
+			<key>ContentOffsetY</key><integer>0</integer>
+			<key>ContentWidth</key><integer>960</integer>
+			<key>Frame</key><string>0,0,320,480</string>
+			<key>HorizontalScrollBars</key><false/>
+			<key>Paging</key><true/>
+			<key>ViewType</key><string>ScrollView</string>
+			<key>id</key><string>ScrollView</string>
+			<key>Subviews</key>
+			<array>
+				<!--@start Web Widget-->
+				<dict>
+					<key>Frame</key><string>29,64,260,365</string>
+					<key>UserInteraction</key><true/>
+					<key>ViewType</key><string>AdvWebView</string>
+					<key>id</key><string>webview</string>
+				</dict>
+				<dict>
+					<key>Frame</key><string>0,0,320,540</string>
+					<key>Image</key>
+					<string>$ROOT/Images/Frame.png</string>
+					<key>ViewType</key><string>ImageView</string>
+				</dict>
+				<!--@end Web Widget-->
+				<!--@start Grid-->
+				<!--@comment: when displaying apps, an editable grid is
+						much nicer than placing multiple AppIcon
+						views-->
+				<dict>
+					<key>AllApps</key><false/>
+					<key>ScrollingEnabled</key><false/>
+					<key>Cols</key><integer>4</integer>
+					<key>Frame</key><string>325,245,650,170</string>
+					<key>GapX</key><integer>82</integer>
+					<key>GapY</key><integer>85</integer>
+					<key>IconHeight</key><integer>85</integer>
+					<key>IconWidth</key><integer>65</integer>
+					<!--@comment: page gap x determines x gap between
+							different pages. we use this grid
+							to cover both pages in our scrollview-->
+					<key>PageGapX</key><integer>320</integer>
+					<key>PageGapY</key><integer>0</integer>
+					<key>Rows</key><integer>2</integer>
+					<key>ViewType</key><string>AppGrid</string>
+					<key>Apps</key>
+					<array>
+						<string>com.apple.mobileipod</string>
+						<string>NO ICON PLACEHOLDER</string>
+						<string>NO ICON PLACEHOLDER</string>
+						<string>com.apple.mobilecal</string>
+						<string>com.apple.mobilemail</string>
+						<string>com.apple.mobilesafari</string>
+						<string>com.apple.Preferences</string>
+						<string>com.apple.weather</string>
+						<string>com.apple.calculator</string>
+						<string>com.apple.camera</string>
+						<string>com.apple.mobilephone</string>
+						<string>com.apple.VoiceMemos</string>
+						<string>com.apple.mobiletimer</string>
+						<string>com.saurik.Cydia</string>
+						<string>com.apple.mobileslideshow</string>
+						<string>eu.heinelt.ifile</string>
+					</array>
+				</dict>
+				<!--@end Grid-->
+				<!--@start HTC Widget-->
+				<dict>
+					<key>Frame</key><string>320,0,320,480</string>
+					<key>ViewType</key><string>View</string>
+					<key>id</key><string>Clock_Wrapper</string>
+					<key>Subviews</key><array>
+						<dict>
+							<key>Frame</key><string>0,20,320,460</string>
+							<key>URL</key>
+							<string>$ROOT/Widgets/HTC/Widget.html</string>
+							<key>UserInteraction</key><false/>
+							<key>ViewType</key><string>WebView</string>
+						</dict>
+						<dict>
+							<key>Frame</key><string>287,45,18,19</string>
+							<key>URL</key>
+							<string>$ROOT/Widgets/WeatherSetting/Widget.html</string>
+							<key>UserInteraction</key><true/>
+							<key>ViewType</key><string>AdvWebView</string>
+						</dict>
+						<dict>
+							<key>Frame</key><string>7,28,304,189</string>
+							<key>Image</key>
+							<string>$ROOT/Images/Clock.png</string>
+							<key>UserInteraction</key><false/>
+							<key>ViewType</key><string>ImageView</string>
+						</dict>
+					</array>
+				</dict>
+				<!--@end HTC Widget-->
+				<!--@start Gingerbread clock>
+				<dict>
+					<key>Frame</key><string>640,20,320,460</string>
+					<key>URL</key>
+					<string>$ROOT/Widgets/Gingerbread Clock/Widget.html</string>
+					<key>UserInteraction</key><false/>
+					<key>ViewType</key><string>WebView</string>
+				</dict>
+				<dict>
+					<key>Frame</key><string>722,80,152,152</string>
+					<key>Image</key><string>$ROOT/Images/ClockFace.png</string>
+					<key>UserInteraction</key><false/>
+					<key>ViewType</key><string>ImageView</string>
+				</dict>
+				<@end Gingerbread clock-->
+			</array>
+		</dict>
+		<!-- @end MainScrollView -->
+		<dict>
+			<key>Frame</key><string>-320,0,960,480</string>
+			<key>ViewType</key><string>ImageView</string>
+			<key>id</key><string>Wallpaper</string>
+		</dict>
+	</array>
+	<key>DynamicViews</key>
+	<dict>
+		<key>Live_Animated_Weather</key>
+		<dict>
+			<key>Frame</key><string>0,0,320,480</string>
+			<key>URL</key>
+			<string>$ROOT/Widgets/LAW/Widget.html</string>
+			<key>UserInteraction</key><false/>
+			<key>ViewType</key><string>WebView</string>
+			<key>id</key><string>Live_Animated_Weather</string>
+		</dict>
+		<key>WallSelection</key>
+		<dict>
+			<!--@start wallpaper selection-->
+			<key>Frame</key><string>10,60,300,125</string>
+			<key>ClipToBounds</key><false/>
+			<key>ViewType</key><string>ScrollView</string>
+			<key>id</key><string>WallSelection</string>
+			<key>ContentWidth</key><integer>875</integer>
+			<key>ContentHeight</key><integer>125</integer>
+			<key>HorizontalScrollBars</key><false/>
+			<key>Subviews</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>vars.selection-wall = 0</string>
+						<string>vars.wall = 1</string>
+						<string>function updateSelection</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>0,0,125,125</string>
+					<key>Image</key><string>$ROOT/Images/Wallpapers/Wallpaper-Thumb1.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>vars.selection-wall = 0</string>
+						<string>vars.wall = 2</string>
+						<string>function updateSelection</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>125,0,125,125</string>
+					<key>Image</key><string>$ROOT/Images/Wallpapers/Wallpaper-Thumb2.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>vars.selection-wall = 0</string>
+						<string>vars.wall = 3</string>
+						<string>function updateSelection</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>250,0,125,125</string>
+					<key>Image</key><string>$ROOT/Images/Wallpapers/Wallpaper-Thumb3.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>vars.selection-wall = 0</string>
+						<string>vars.wall = 4</string>
+						<string>function updateSelection</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>375,0,125,125</string>
+					<key>Image</key><string>$ROOT/Images/Wallpapers/Wallpaper-Thumb4.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>vars.selection-wall = 0</string>
+						<string>vars.wall = 5</string>
+						<string>function updateSelection</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>500,0,125,125</string>
+					<key>Image</key><string>$ROOT/Images/Wallpapers/Wallpaper-Thumb5.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>vars.selection-wall = 0</string>
+						<string>vars.wall = 6</string>
+						<string>function updateSelection</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>625,0,125,125</string>
+					<key>Image</key><string>$ROOT/Images/Wallpapers/Wallpaper-Thumb6.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>vars.selection-wall = 0</string>
+						<string>vars.wall = 7</string>
+						<string>function updateSelection</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>750,0,125,125</string>
+					<key>Image</key><string>$ROOT/Images/Wallpapers/Wallpaper-Thumb7.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+			</array>
+			<!--@end wallpaper selection-->
+		</dict>
+		<key>WebSelection</key>
+		<dict>
+			<!--@start web selection-->
+			<key>Frame</key><string>10,60,300,125</string>
+			<key>ClipToBounds</key><false/>
+			<key>ViewType</key><string>ScrollView</string>
+			<key>id</key><string>WebSelection</string>
+			<key>ContentWidth</key><integer>375</integer>
+			<key>ContentHeight</key><integer>125</integer>
+			<key>HorizontalScrollBars</key><false/>
+			<key>Subviews</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>vars.selection-web = 0</string>
+						<string>vars.web = 1</string>
+						<string>function updateSelection</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>0,0,125,125</string>
+					<key>Image</key><string>$ROOT/Images/Web/Web-Thumb1.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>vars.selection-web = 0</string>
+						<string>vars.web = 2</string>
+						<string>function updateSelection</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>125,0,125,125</string>
+					<key>Image</key><string>$ROOT/Images/Web/Web-Thumb2.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<string>vars.selection-web = 0</string>
+						<string>vars.web = 3</string>
+						<string>function updateSelection</string>
+						<string>function update</string>
+					</array>
+					<key>Frame</key><string>250,0,125,125</string>
+					<key>Image</key><string>$ROOT/Images/Web/Web-Thumb3.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+			</array>
+			<!--@end web selection-->
+		</dict>
+	</dict>
+	<key>Functions</key>
+	<dict>
+		<key>ScrollViewDidScroll</key>
+		<array>
+			<!--@comment: a bit of math here, we want the wallpaper to 
+					scroll half as much as the main scrollview
+					does, but scrollview scrolling is inversed
+					(you move your finger left, the scrollview
+					moves right) so we divide by -2, then subtract
+					160 to fix the offset-->
+			<string>views.Wallpaper.x = get.views.ScrollView.contentOffsetX / -2 - 160</string> 
+
+			<!--@start page indicator-->
+			<!--@comment: reset the rotation before messing with x/y values 
+					otherwise you'll get some crazy results-->
+			<string>views.pageindi.rotation = 0</string>
+			<!--@comment: a lot of math here. we use a quadratic equation to model
+					the circular shape of the dock. our x value is proportional
+					to the current page. then, we use the vertex form of the 
+					equation of a parabola: a(x-h)^2+k. in this case, h is 135
+					and k is 15.-->
+			<!--@comment: find our x value -->
+			<string>views.pageindi.x = get.views.ScrollView.contentOffsetX / 640 * 270</string>
+
+			<!--@comment: (x-h) which becomes (x-135)-->
+			<string>views.pageindi.y = get.views.pageindi.x - 135</string>
+
+			<!--@comment: square (x-h) -->
+			<string>views.pageindi.y = get.views.pageindi.y * get.views.pageindi.y</string>
+
+			<!--@comment: multiply by a and add k, a = 0.0006, k = 15 -->
+			<string>views.pageindi.y = get.views.pageindi.y * 0.0006 + 15</string>
+			<string>views.pageindi.rotation = get.views.ScrollView.contentOffsetX / 640 * 18 - 9</string>
+			<!--@end page indicator-->
+
+			<dict>
+			<key>if</key><array><string>get.views.ScrollView.contentOffsetX gt= 320</string></array>
+			<key>then</key><array><string>views.Clock_Wrapper.x = get.views.ScrollView.contentOffsetX</string></array>
+			<key>else</key><array>
+				<string>views.dock.y = get.views.ScrollView.contentOffsetX / 320 * -65 + 480</string>
+				<string>views.Clock_Wrapper.x = 320</string>
+			</array>
+			</dict>
+		</array>
+		<key>update</key>
+		<array>
+			<!--@comment: handle grid-->
+			<dict>
+			<key>if</key><array><string>get.vars.grid = 1</string></array>
+			<key>then</key><array>
+				<string>views.realgrid.userInteraction = YES</string>
+				<string>views.grid.y = 0 animated:0.5</string>
+			</array>
+			<key>else</key><array>
+				<string>views.realgrid.userInteraction = NO</string>
+				<string>views.grid.y = 480 animated:0.5</string>
+			</array>
+			</dict>
+
+			<!--@comment: handle settings-->
+			<dict>
+			<key>if</key><array><string>get.vars.settings = 1</string></array>
+			<key>then</key><array><string>views.settings.y = 0 animated:0.5</string></array>
+			<key>else</key><array><string>views.settings.y = 480 animated:0.5</string></array>
+			</dict>
+
+			<!--@comment: handle live animated weather-->
+			<dict>
+			<key>if</key><array><string>get.vars.law = 1</string></array>
+			<key>then</key>
+			<array>
+				<string>insertview Live_Animated_Weather above ScrollView</string>
+				<string>views.box1.image = Images/Check.png</string>
+			</array>
+			<key>else</key>
+			<array>
+				<string>removeview Live_Animated_Weather</string>
+				<string>views.box1.image = Images/Box.png</string>
+			</array>			
+			</dict>
+
+			<!--@comment: handle editing mode-->
+			<dict>
+			<key>if</key><array><string>get.vars.editing = 1</string></array>
+			<key>then</key>
+			<array>
+				<string>startediting</string>
+				<string>views.box2.image = Images/Check.png</string>
+			</array>
+			<key>else</key>
+			<array>
+				<string>stopediting</string>
+				<string>views.box2.image = Images/Box.png</string>
+			</array>			
+			</dict>
+
+			<!--@comment: handle wallpaper selection-->
+			<dict>
+			<key>if</key><array><string>get.vars.selection-wall = 1</string></array>
+			<key>then</key>
+			<array>
+				<string>insertview WallSelection to selection</string>
+				<string>views.selection.y = 280 animated:0.5</string>
+			</array>
+			<key>else</key>
+			<array>
+				<string>removeview WallSelection</string>
+				<!--@comment: handle web selection-->
+				<dict>
+				<key>if</key><array><string>get.vars.selection-web = 1</string></array>
+				<key>then</key>
+				<array>
+					<string>insertview WebSelection to selection</string>
+					<string>views.selection.y = 280 animated:0.5</string>
+				</array>
+				<key>else</key>
+				<array>
+					<string>removeview WebSelection</string>
+					<string>views.selection.y = 480 animated:0.5</string>
+				</array>			
+				</dict>
+			</array>			
+			</dict>
+			<string>savevar</string>
+		</array>
+		<key>updateSelection</key>
+		<array>
+			<string>get.vars.wall = 1 ? views.Wallpaper.image = /Images/Wallpapers/Wallpaper1.png : nothing</string>
+			<string>get.vars.wall = 2 ? views.Wallpaper.image = /Images/Wallpapers/Wallpaper2.png : nothing</string>
+			<string>get.vars.wall = 3 ? views.Wallpaper.image = /Images/Wallpapers/Wallpaper3.png : nothing</string>
+			<string>get.vars.wall = 4 ? views.Wallpaper.image = /Images/Wallpapers/Wallpaper4.png : nothing</string>
+			<string>get.vars.wall = 5 ? views.Wallpaper.image = /Images/Wallpapers/Wallpaper5.png : nothing</string>
+			<string>get.vars.wall = 6 ? views.Wallpaper.image = /Images/Wallpapers/Wallpaper6.png : nothing</string>
+			<string>get.vars.wall = 7 ? views.Wallpaper.image = /Images/Wallpapers/Wallpaper7.png : nothing</string>
+			<string>get.vars.wall = 1 ? views.Wallpaper.image = /Images/Wallpapers/Wallpaper1.png : nothing</string>
+			<string>get.vars.wall = 2 ? views.Wallpaper.image = /Images/Wallpapers/Wallpaper2.png : nothing</string>
+			<string>get.vars.wall = 3 ? views.Wallpaper.image = /Images/Wallpapers/Wallpaper3.png : nothing</string>
+
+			<string>get.vars.web = 1 ? views.webview.URL = $ROOT/Widgets/Web/Facebook.html : nothing</string>
+			<string>get.vars.web = 2 ? views.webview.URL = $ROOT/Widgets/Web/Twitter.html : nothing</string>
+			<string>get.vars.web = 3 ? views.webview.URL = $ROOT/Widgets/Web/Google.html : nothing</string>
+		</array>
+	</dict>
+	<key>Variables</key>
+	<dict>
+		<key>grid</key><integer>0</integer>
+		<key>law</key><integer>0</integer>
+		<key>settings</key><integer>0</integer>
+		<key>editing</key><integer>0</integer>
+		<key>selection-wall</key><integer>0</integer>
+		<key>selection-web</key><integer>0</integer>
+		<key>wall</key><integer>1</integer>
+		<key>web</key><integer>1</integer>
+	</dict>
+	<key>Onload</key>
+	<array>
+		<string>vars.grid = 0</string>
+		<string>vars.settings = 0</string>
+		<string>vars.editing = 0</string>
+		<string>vars.selection-wall = 0</string>
+		<string>vars.selection-web = 0</string>
+		<string>function updateSelection</string>
+		<string>function update</string>
+	</array>
+	<key>LockView</key>
+	<array>
+		<dict>
+			<key>Frame</key><string>0,0,320,480</string>
+			<key>ViewType</key><string>ScrollView</string>
+			<key>id</key><string>SlideView</string>
+			<key>ContentWidth</key><integer>320</integer>
+			<key>ContentHeight</key><integer>960</integer>
+			<key>ContentOffsetX</key><integer>0</integer>
+			<key>ContentOffsetY</key><integer>480</integer>
+			<key>VerticalScrollBars</key><false/>
+			<key>Paging</key><true/>
+			<key>Actions</key><array>
+				<string>get.views.SlideView.contentOffsetY = 0 ? unlock : nothing</string>
+				<string>views.PreviewImage.alpha = get.views.SlideView.contentOffsetY / -480 + 1</string>
+			</array>
+			<key>Subviews</key>
+			<array>
+				<dict>
+					<key>Frame</key><string>0,480,320,480</string>
+					<key>ViewType</key><string>WebView</string>
+					<key>URL</key><string>$ROOT/Widgets/Lockscreen/Lockscreen.html</string>
+				</dict>
+				<dict>
+					<key>Frame</key><string>0,480,320,600</string>
+					<key>ViewType</key><string>ImageView</string>
+					<key>Image</key><string>$ROOT/Images/Lockscreen.png</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Frame</key><string>0,0,320,480</string>
+			<key>ViewType</key><string>ImageView</string>
+			<key>Image</key><string>$ROOT/Preview.png</string>
+			<key>id</key><string>PreviewImage</string>
+		</dict>
+	</array>
+	<key>LabelStyle</key>
+	<dict>
+		<key>labelFontSize</key>
+		<integer>11</integer>
+		<key>labelHeight</key>
+		<integer>12</integer>
+		<key>labelWidth</key>
+		<integer>55</integer>
+		<key>labelX</key>
+		<integer>5</integer>
+		<key>labelY</key>
+		<integer>70</integer>
+	</dict>
+</dict>
+</plist>

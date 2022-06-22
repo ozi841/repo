@@ -1,0 +1,28 @@
+Package: com.sh0ckdev.bochs
+Version: 4.2
+Architecture: iphoneos-arm
+Maintainer: ozi841 <ozi.340.03@icloud.com>
+Filename: /Bochs4.2.deb
+Size: 2087504
+MD5sum: dd49feaac85eb891936ec6e8d7d9c7d0
+SHA1: 1ece287cff677210860bccc4d399b7720f18c04a
+SHA256: 317b85ad21d3c7a92cf5dbe06813a5ea7db0ba075e7a06c3ddce1c78e7584346
+Section: Tweaks
+Description: Bochs iPhone/iPod version 4.2 made by ShockDevTeam
+Author: ShockDevTeam <ozi.340.03@icloud.com>
+Name: Bochs 4.2
+
+
+Package: com.wynd.dreamboard
+Version: 1.1.4
+Architecture: iphoneos-arm
+Maintainer: poetic_folly <poetic_folly@modmyi.com>
+Filename: /dreamboard.deb
+Size: 10001288
+MD5sum: 608390ca3439fa392291dd2ca700c2bb
+SHA1: d8b96e8720a03a0e644e9a0259ccee3abcd21404
+SHA256: c4f9938465ec43b46836ab44c620c5c44e8ec74e77dbacc5e6d36df7f99d6c85
+Section: Tweaks
+Description: Free! Advanced Theming Platform.(reupload)
+Author: Andrew Liu <wyndwarrior@hotmail.com>
+Name: Dreamboard

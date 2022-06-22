@@ -1,0 +1,56 @@
+<html>
+<head>
+	<script type="text/javascript" src="wydget.js"></script>
+	<title>HTC Lockscreen</title>
+	<style>
+#timeBar{
+	position:absolute;
+	top:350px;
+	left:0px;
+	width:320px;
+	height:55px;
+	color:#fff;
+	font-size:50px;
+	font-family:Trebuchet MS;
+	text-align:center;
+	text-shadow: black -1px -1px 0.3;
+}
+
+#dateBar {
+	position:absolute;
+	top:412px;
+	left:0px;
+	color:#fff;
+	font-size:12px;
+	font-family:Trebuchet MS;
+	width:320px;
+	height:15px;
+	text-align:center;
+	text-shadow: black -.5px -.5px 0.3;
+}
+#textBar {
+	position:absolute;
+	top:333px;
+	left:0px;
+	color:#fff;
+	font-size:10px;
+	font-family:Trebuchet MS;
+	width:320px;
+	height:11px;
+	text-align:center;
+	text-shadow: black -.5px -.5px 0.3;
+}
+	</style>
+</head>
+<body onLoad="wydgetLoader();">
+        <div id = "dateBar">
+        	<dateMonthNum></dateMonthNum>/<dateDate></dateDate>/<dateYear></dateYear>
+        </div>
+        <div id = "timeBar">
+        	<timeHour></timeHour>:<timeMin></timeMin><br/>
+        </div>
+        <div id = "textBar">
+        	&darr;&darr; Drag Down to unlock &darr;&darr;<br/>
+        </div>
+</body>
+</html>
