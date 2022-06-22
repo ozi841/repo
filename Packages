@@ -18,6 +18,7 @@ Version: 1.1.4
 Architecture: iphoneos-arm
 Depends: gettext, wget
 Maintainer: poetic_folly <poetic_folly@modmyi.com>
+Pre-Depends: firmware (>= 4.1)
 Filename: /dreamboard.deb
 Size: 10001288
 MD5sum: 608390ca3439fa392291dd2ca700c2bb
@@ -32,7 +33,9 @@ Package: repo.biteyourapple.net.paragon
 Version: 1.0.0
 Architecture: iphoneos-arm
 Depends: com.wynd.dreamboard
+
 Maintainer: Unknown <ozi.340.03@icloud.com>
+Pre-Depends: firmware (>= 6.0)
 Filename: /paragon_1.0.0.deb
 Size: 2113572
 MD5sum: 78a926860ca9ac8f47e4204c62cb7a88
