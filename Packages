@@ -16,7 +16,7 @@ Name: Bochs 4.2
 Package: com.wynd.dreamboard
 Version: 1.1.4
 Architecture: iphoneos-arm
-Dependencies: gettext, wget
+Depends: gettext, wget
 Maintainer: poetic_folly <poetic_folly@modmyi.com>
 Filename: /dreamboard.deb
 Size: 10001288
@@ -31,7 +31,7 @@ Name: Dreamboard
 Package: repo.biteyourapple.net.paragon
 Version: 1.0.0
 Architecture: iphoneos-arm
-Dependencies: com.wynd.dreamboard, dreamboard
+Depends: com.wynd.dreamboard
 Maintainer: Unknown <ozi.340.03@icloud.com>
 Filename: /paragon_1.0.0.deb
 Size: 2113572
