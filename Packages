@@ -31,14 +31,14 @@ Name: Dreamboard
 Package: repo.biteyourapple.net.paragon
 Version: 1.0.0
 Architecture: iphoneos-arm
-Dependencies: com.wynd.dreamboard
+Dependencies: com.wynd.dreamboard, dreamboard
 Maintainer: Unknown <ozi.340.03@icloud.com>
 Filename: /paragon_1.0.0.deb
 Size: 2113572
 MD5sum: 78a926860ca9ac8f47e4204c62cb7a88
 SHA1: 87528a1f1b006fd909650f8d5ef2b54f6e149920
 SHA256: 03c09adece479bebbd4bf014321b721c8e2f6fecf8712ae0c3fdbbb7f5bb5862
-Section: Tweaks
+Section: Tweakss
 Description: Reuploaded Dreamboard Windows Phone Theme
 Author: Unknown <ozi.340.03@icloud.com>
 Name: Paragon
