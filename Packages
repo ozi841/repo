@@ -16,6 +16,7 @@ Name: Bochs 4.2
 Package: com.wynd.dreamboard
 Version: 1.1.4
 Architecture: iphoneos-arm
+Dependencies: gettext, wget
 Maintainer: poetic_folly <poetic_folly@modmyi.com>
 Filename: /dreamboard.deb
 Size: 10001288
