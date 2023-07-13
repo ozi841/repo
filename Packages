@@ -1,0 +1,94 @@
+Package: com.chpwn.weeloader
+Version: 1.2-1
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 20
+Pre-Depends: firmware (>= 5.0)
+Depends: mobilesubstrate
+Filename: ./debs/com.chpwn.weeloader_1.2_iphoneos-arm.deb
+Size: 3830
+MD5sum: ee78467f5097495063f1099150b08257
+SHA1: 620ab1dee0f92e8bea6dc8b20fb067c34275112c
+SHA256: a68c1a43b2ddf1e271990c70d32501eb3b73b96be0c6de68b493f3a64b5e00f8
+Section: Development
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=weeloaderDp
+Description: Weeeeeeeeeee! Load Wee apps safely.
+Tag: role::developer, purpose::extension
+Author: chpwn <support@chpwn.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=weeloaderDp
+Dev: chpwn
+Name: WeeLoader
+Sponsor: thebigboss.org <http://thebigboss.org>
+
+Package: com.isecpartners.nabla.sslkillswitch
+Version: 0.5-6
+Architecture: iphoneos-arm
+Maintainer: Alban Diquet <alban@isecpartners.com>
+Installed-Size: 20
+Depends: mobilesubstrate, preferenceloader
+Filename: ./debs/com.isecpartners.nabla.sslkillswitch_0.5_iphoneos-arm.deb
+Size: 4836
+MD5sum: bb5a5dde9d8e7739713af6c833d02d0e
+SHA1: 4ffd18f8ed86b89072f320169509015080830bb1
+SHA256: 0f3701285fce6803c43a652864f3fce3be7facc3d2e15d9f3448f8ebe5deb8c5
+Section: Tweaks
+Description: Blackbox tool to disable SSL certificate validation - including certificate pinning - within iOS Apps.
+Author: Alban Diquet <alban@isecpartners.com>
+Name: iOS SSL Kill Switch
+
+Package: com.sh0ckdev.bochs
+Version: 4.2
+Architecture: iphoneos-arm
+Maintainer: Justin Clifford (personman) <personman@personman.dnsalias.com>
+Installed-Size: 4971.474609375
+Filename: ./debs/com.sh0ckdev.bochs_4.2_iphoneos-arm.deb
+Size: 2087504
+MD5sum: dd49feaac85eb891936ec6e8d7d9c7d0
+SHA1: 1ece287cff677210860bccc4d399b7720f18c04a
+SHA256: 317b85ad21d3c7a92cf5dbe06813a5ea7db0ba075e7a06c3ddce1c78e7584346
+Section: Apps
+Homepage: http://personman.dnsalias.com/repo/Info Pages/Bochs.html
+Description: IMPORTANT: The OS must be selected while in landscape mode in order for the keyboard to work properly! Bochs was originally ported to the iPhone by the iSoft Team. This version of Bochs for iPhone was modified by the Shock Dev Team. we have added a keyboard and other modifications. To learn how to add more operating systems go to shockdevteam.webs.com and go to the tutorials page. Please donate using the link on our site or in the app to contribute to all our hard work.
+Author: Sh0ck Dev Team <shockdevteam@gmail.com>
+Icon: file:///Applications/bochs_proj.app/icon@59x60.png
+Name: Bochs
+
+Package: com.wynd.dreamboard
+Version: 1.1.4
+Architecture: iphoneos-arm
+Maintainer: poetic_folly <poetic_folly@modmyi.com>
+Depends: mobilesubstrate, wget, coreutils
+Filename: ./debs/com.wynd.dreamboard_1.1.4_iphoneos-arm.deb
+Size: 10001288
+MD5sum: 608390ca3439fa392291dd2ca700c2bb
+SHA1: d8b96e8720a03a0e644e9a0259ccee3abcd21404
+SHA256: c4f9938465ec43b46836ab44c620c5c44e8ec74e77dbacc5e6d36df7f99d6c85
+Section: System
+Priority: extra
+Homepage: http://modmyi.com/info/dreamboard.php
+Description: Free! Advanced Theming Platform. Take control over SpringBoard!
+Author: Andrew Liu <wyndwarrior@hotmail.com>
+Depiction: http://modmyi.com/info/dreamboard.d.php
+Name: DreamBoard
+Sponsor: ModMyi.com <http://modmyi.com/forums/index.php?styleid=31>
+
+Package: repo.biteyourapple.net.paragon
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Redenfire <redenfire@gmail.com>
+Depends: firmware (>= 6.0), mobilesubstrate, com.wynd.dreamboard
+Conflicts: com.zmaster.androidlockxt, repo.biteyourapple.net.androidlockxt
+Replaces: com.zmaster.androidlockxt, repo.biteyourapple.net.androidlockxt
+Filename: ./debs/repo.biteyourapple.net.paragon_1.0.0_iphoneos-arm.deb
+Size: 2113572
+MD5sum: 78a926860ca9ac8f47e4204c62cb7a88
+SHA1: 87528a1f1b006fd909650f8d5ef2b54f6e149920
+SHA256: 03c09adece479bebbd4bf014321b721c8e2f6fecf8712ae0c3fdbbb7f5bb5862
+Section: BYA Themes
+Homepage: http://www.biteyourapple.net
+Description: Paragon is the most realistic Windows Phone 8 theme for your iPhone!
+Author: BYA Repository
+Depiction: http://repo.biteyourapple.net/depiction/dep.php?name=paragon
+Name: Paragon
+Sponsor: biteyourapple <http://www.biteyourapple.net>
+
